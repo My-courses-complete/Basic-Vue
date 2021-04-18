@@ -26,6 +26,9 @@
         <span v-show="changePercent == 0">Luky!</span> -->
       </h1>
 
+      <input type="number" v-model="value" />
+      <span>{{ converterValue }}</span>
+
       <span v-on:click="toggleShowPrices"
         >{{ showPrices ? 'Ocultar precios' : 'Mostrar precios'}}</span
       >
