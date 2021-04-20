@@ -45,6 +45,14 @@ Vue.component("CoinDetail", {
   </div>
   `,
 
+  created () {
+    console.log('Created CoinDetail...');
+  },
+
+  mounted () {
+    console.log('Mounted CoinDetail...')
+  },
+
   computed: {
     title() {
       return `${this.coin.name} - ${this.coin.symbol}`;
@@ -89,6 +97,14 @@ new Vue({
       },
       color: "f4f4f4",
     };
+  },
+
+  created () {
+    console.log('Created...');
+  },
+
+  mounted () {
+    console.log('Mounted...')
   },
 
   methods: {
